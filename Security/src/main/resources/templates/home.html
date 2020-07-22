@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body {
+	background-image:
+		url("https://www.xmple.com/wallpaper/blue-linear-gradient-purple-1440x1080-c2-8a2be2-00ced1-a-90-f-14.svg");
+}
+
+.card {
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+	margin-bottom: 10px; /* Added */
+}
+
+.btn-success {
+	margin-left: 100px;
+}
+
+.lghd {
+	color: orange;
+	text-align: center;
+}
+
+.navbar-default {
+	background-color: orange;
+}
+</style>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-default">
+		<a class="navbar-brand" href="#">Zonix Technologies</a>
+	</nav>
+
+	<div class="card bg-light text-dark"
+		style="width: 28rem; height: 25rem;">
+		<h2 class="lghd">WHO ARE YOU?</h2>
+		<div class="container-sm">
+			<a href="/admin"><button class="btn btn-success">ADMIN</button></a>
+		</div>
+		<br /> <br />
+		<div class="container-sm">
+			<a href="/user"><button class="btn btn-success">USER</button></a>
+		</div>
+		<br /> <br />
+		<div class="container-sm">
+			<a href="/guest"><button class="btn btn-success">GUEST</button></a>
+		</div>
+
+	</div>
+
+</body>
+</html>
